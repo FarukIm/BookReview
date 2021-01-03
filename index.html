@@ -56,29 +56,35 @@
                 </div>
                 <div id="collapseOne" class=" collapse" aria-labelledby="headingOne" data-parent="#posts">
                     <div class="card-body">
-                        <form class=" bg-light" method="post">
+                        <form class=" bg-light" action="insert.php" method="post">
                             <fieldset>
                                 <legend class="text-center "> Write like it matters, and it will. </legend>
 
                                 <div class="form-group">
-                                    <span class="col-md-1  text-center">Book Title:</span>
+                                    <span class="col-md-1  text-center">
+                                        <label for="title"> Book Title: </label>
+                                    </span>
                                     <div class="col-md-8">
-                                        <input id="title" name="name" type="text"
+                                        <input id="title" name="title" type="text"
                                             placeholder="eg. The Hitchhiker's Guide to the Galaxy" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <span class="col-md-1 text-center">Author: </span>
+                                    <span class="col-md-1 text-center">
+                                        <label for="author">Author:</label>
+                                    </span>
                                     <div class="col-md-8">
-                                        <input id="author" name="name" type="text" placeholder="eg. Douglas Adams"
+                                        <input id="author" name="author" type="text" placeholder="eg. Douglas Adams"
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <span class="col-md-1 text-center">Select Genre: </span>
+                                    <span class="col-md-1 text-center">
+                                        <label for="genre">Select Genre: </label>    
+                                    </span>
                                     <div class="col-md-8">
-                                        <select class="form-control" id="genre">
+                                        <select class="form-control" id="genre" name="genre" type="text">
                                             <option value="" selected disabled>Please select</option>
                                             <option>Action</option>
                                             <option>Biography</option>
@@ -104,16 +110,19 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <span class="col-md-1  text-center">Your Review:</span>
+                                    <span class="col-md-1  text-center">
+                                        <label for="review"> Your Review:</label>
+                                    </span>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="review" name="message"
+                                        <textarea class="form-control" id="review" name="review"
                                             placeholder="Write your review here..." rows="7"></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-light bg-success btn-lg">Submit</button>
+                                        <button type="submit" name="submit"
+                                            class="btn btn-light bg-success btn-lg">Submit</button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -124,7 +133,7 @@
         </div>
     </div>
 
-    <footer class="py-5 bg-dark spacing fixed-bottom">
+    <footer class="py-5 bg-dark fixed-bottom">
         <div class="container">
             <p class="m-0 text-center text-white">footer here</p>
         </div>
