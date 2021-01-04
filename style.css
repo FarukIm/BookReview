@@ -1,0 +1,101 @@
+.booktitle{
+    font-size: 50px !important;
+    border-bottom: solid rgb(255, 123, 0) 2px;
+}
+
+.bookauthor{
+    font-size: 35px !important;
+    color:  rgb(255, 123, 0);
+    display: inline-block;
+}
+
+.bookauthor a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.bookgenre{
+    font-size: 30px !important;
+    color:  rgb(255, 123, 0);
+    display: inline-block;
+}
+
+.bookgenre a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.bookreview{
+    font-size: 18px !important;
+    color: black;
+    border: solid  rgb(255, 123, 0) 2px;
+    margin: 5px 30px;
+}
+
+.accordion-spacing{
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin-top: 30%;
+}
+
+.parallax{
+    background-image: url("Images/bookshelf.jpg");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.accordion-pos{
+    position: absolute;
+    margin-top: 30px;
+}
+
+.end{
+    justify-content: center;
+    text-align: center;
+    font-size:30px;
+}
+
+.end a{
+    color:orange;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+}
+.end a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.space{
+    margin-top: 100px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.foot a{
+    color:orange;
+    transition: all 0.3s ease; 
+}
+.foot a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer{
+    width: 100%;
+    color: #282c2b;
+    border-top: 3px solid rgb(49, 45, 45);
+    border-bottom: 3px solid rgb(49, 45, 45);
+    height: 10%;
+    position: aboslute;
+    bottom: 0;
+    padding: 5px;
+}

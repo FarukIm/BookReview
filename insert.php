@@ -14,21 +14,11 @@ $review = mysqli_real_escape_string($link, $_REQUEST['review']);
 $sqlInsert = "INSERT INTO posts (title, author, genre, review) VALUES ('$title', '$author', '$genre', '$review')";
 if(mysqli_query($link, $sqlInsert)){
     echo "Your review has been successfully added! The site will reload shortly so you can see your review";
+    sleep(2);
+    header("Location: index.php");
 } else{
     echo "ERROR: Could not able to execute $sqlInsert. " . mysqli_error($link);
 }
-
-$sqlOutput = "SELECT id, author, title, genre, review FROM posts";
-$result = $link->query($sqlOutput);
-
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo  "Title: " . $row["title"]. " Author: " . $row["author"]. " Genre: " . $row["genre"]. " Review: " . $row["review"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-
 
 mysqli_close($link);
 ?>
